@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    margin: 0 auto;
+}
+body{
+    transition: all .8s ease-in-out;
+}
+p{
+    color: red;
+    font-size: 2rem;
+    line-height: 1.5;
+    text-transform: capitalize;
+    font-weight: bold;
+    border: 1px solid #000;
+    margin-bottom: 2rem;
+    width: 100%;
+    text-align: center;
+    text-shadow: 3px 4px 5px rgba(172, 30, 30, 0.5);
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+ul{
+    list-style: none;
+}
+header{
+    padding: 2rem 9%;
+    height: 5rem;
+    background: linear-gradient(67deg, red, orange);
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    
+    justify-content: center;
+    max-width: 800px;
+    height: 100%;
+}
+ul{
+    display: flex;
+    gap: 1.5rem;
+}
+li a{
+    padding: 1rem 1.5rem;
+    color: aliceblue;
+    font-size: 1.5rem;
+    background: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+li a:hover{
+    border: red;
+    transform: scale(.8);
+    padding-left: 10px;;
+}
+
+section{
+    padding: 2rem 9%;
+    position: relative;
+    height: 25rem;
+    width: 100%;
+    display: grid;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 2rem auto;
+    padding: 1rem 1.5rem;
+    border: 2px solid #fff;
+    max-width: 600px;
+    box-shadow: 5px 5px 14px 3px rgba(0, 0, 0, 0.5);
+}
+
+h2{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    border: 2px solid #fff;
+    box-shadow: 5px 5px 14px 3px rgba(0, 0, 0, 0.5);
+}
+.btn,.btn-h{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: bold;
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin: 2rem auto;
+    padding: 1rem 1.5rem;
+    border: 2px solid #fff;
+    box-shadow: 5px 5px 14px 3px rgba(0, 0, 0, 0.5);
+
+}

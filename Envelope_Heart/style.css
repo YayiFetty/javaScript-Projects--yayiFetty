@@ -1,0 +1,55 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0973b3;
+}
+.card{
+    width: 0;
+    height: 0;
+    border-top: 100px solid rgb(231, 113, 113);
+    border-right: 170px solid rgb(99, 99, 230);
+    border-bottom: 100px solid rgb(231, 139, 139);
+    border-left: 170px solid rgb(99, 99, 241)
+}
+ .heart{
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    transform: translate(-50%, -50%) rotate(45deg);
+    animation: heart 1.5s linear infinite;
+} 
+.heart:before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform: translateX(-50%);
+    border-radius: 50%;
+
+}
+.heart:after{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    
+}
+
+@keyframes heart{
+    0%{transform: translate(-50%, -50%) rotate(45deg) scale(1);}
+    25%{transform: translate(-50%, -50%) rotate(45deg) scale(1);}
+    30%{transform: translate(-50%, -50%) rotate(45deg) scale(1.5);}
+    50%{transform: translate(-50%, -50%) rotate(45deg) scale(1.5);}
+    70%{transform: translate(-50%, -50%) rotate(45deg) scale(1.5);}
+    100%{transform: translate(-50%, -50%) rotate(45deg) scale(1);}
+}
